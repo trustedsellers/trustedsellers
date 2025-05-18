@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Free Fire Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🔥 Free Fire Services Store 🔥</h1>
+    <nav>
+      <a href="whatsapp.html">Whatsapp group</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="products">
+    <div class="product-card">
+      <h2>Paid Sensi Config</h2>
+      <p>Price: Rs 100</p>
+      <button onclick="buyNow('Paid Sensi Config', 100)">Buy Now</button>
+    </div>
+    <div class="product-card">
+      <h2>Proxy Service</h2>
+      <p>Price: Rs 100</p>
+      <button onclick="buyNow('Proxy Service', 100)">Buy Now</button>
+    </div>
+    <div class="product-card">
+      <h2>Wi-Fi Password Hack Method</h2>
+      <p>Price: Rs 200</p>
+      <button onclick="buyNow('Wi-Fi Password Hack Method', 200)">Buy Now</button>
+    </div>
+    <div class="product-card">
+      <h2>WhatsApp Ban & Unban Method</h2>
+      <p>Price: Rs 200</p>
+      <button onclick="buyNow('WhatsApp Ban & Unban Method', 200)">Buy Now</button>
+    </div>
+    <div class="product-card">
+      <h2>Free Fire Antiban Panel</h2>
+      <p>Price: Rs 200</p>
+      <button onclick="buyNow('Free Fire Antiban Panel', 200)">Buy Now</button>
+    </div>
+  </section>
+  <center><p>For buying click on contact above</p></center>
+
+  <section class="form-section">
+    <h2>Enter Your Details</h2>
+    <form id="topupForm" onsubmit="submitForm(event)">
+      <input type="text" id="userId" placeholder="Your WhatsApp or ID" required />
+      <input type="text" id="serviceType" placeholder="Service Name (e.g. Sensi, Proxy)" required />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="confirmationMessage"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
